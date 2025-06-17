@@ -14,7 +14,7 @@ const triggerCheckIn = async (req, res) => {
       console.log("👉 deviceMac:", deviceMac);
       console.log("👉 token:", token);
 
-      const response = await axios.post(`http://localhost:5000/attendance/checkin`, {
+      const response = await axios.post(`http://localhost:5000/api/attendance/checkin`, {
         wifiMac,
         deviceMac
       }, {
